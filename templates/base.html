@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>url2.win | {% block title %} Short that url {% endblock title %}</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/3.3/examples/cover/cover.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #39b7b3;
+        }
+
+        .btn-link {
+            color: #a3ffe8;
+            text-shadow: none;
+        }
+
+        .btn-link:hover {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="inner cover">
+
+              {% block content %}
+              {% endblock content %}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</body>
+</html>
