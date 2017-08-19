@@ -65,6 +65,5 @@ class WinURL(models.Model):
         #     scheme='http',
         #     port='8000'
         # )
-        url_path = reverse('scode', args=(self.shortcode,))
-        print('url_path:', url_path)
-        return url_path
+        short_url = reverse('scode', args=(self.shortcode,))
+        return short_url

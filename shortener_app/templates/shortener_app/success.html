@@ -20,8 +20,8 @@
         {% endif %}
 
         <p>
-            <a class="btn btn-link" href="{{ object.get_short_url }}">
-                {{ object.get_short_url }}
+            <a class="btn btn-link" href="{{ request.scheme }}://{{ request.get_host }}{{ object.get_short_url }}">
+                {{ request.scheme }}://{{ request.get_host }}{{ object.get_short_url }}
             </a>
         </p>
         <p>
